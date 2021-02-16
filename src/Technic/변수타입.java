@@ -36,5 +36,3 @@ class B{
 abstract class A{	// abstract 클래스 : abstract 메소드를 보유할 수 있다.
 	abstract void a(); // abstract 메서드 : 껍데기만 있는 메소드
 }
-
-침ㄴㄴ ㅁ{

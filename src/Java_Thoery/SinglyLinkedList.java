@@ -1,2 +1,4 @@
-package Java_Thoery;public class SinglyLinkedList {
+package Java_Thoery;
+
+public class SinglyLinkedList {
 }
