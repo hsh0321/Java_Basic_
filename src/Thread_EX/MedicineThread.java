@@ -1,0 +1,26 @@
+package Thread_EX;
+
+public class MedicineThread extends Thread{
+    Cell cell;
+
+    public MedicineThread(Cell cell) {
+        this.cell = cell;
+    }
+
+    @Override
+    public void run() {
+
+        synchronized(cell) {
+            if( cell.power < 500 ) {
+                try {
+                    Thread.sleep(500);
+                }catch(InterruptedException e) {
+                    e.printStackTrace();
+                }
+                cell.power = cell.power + 100;
+            }
+
+            System.out.println(cell.power);
+        }
+    }
+}
